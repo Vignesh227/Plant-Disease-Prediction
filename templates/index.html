@@ -1,0 +1,48 @@
+{% extends "import.html" %} 
+{% block content %}
+
+<center>
+<div class="sub">
+    <div class="sub-one">
+        <div class="sub-one-one">
+            <img src="../static/images/plant-2.png" alt="plant-image" class="plant-img">
+        </div>
+        <div class="sub-two-two">
+            <br><h2>Plant Disease Diagnosis</h2><br>
+            <p class="intro-content">Is your plant is affected by unknown disease?<br>
+                <span class="dont-worry">Dont Worry 😀</span> <br> <br>
+            
+                <span class="steps"> 
+                📸 Upload the infected part of your plant<br>
+                <br class="middle"> ✅ Get to know the name of the Disease<br> <br class="middle">
+                ❗ Take neccessary actions 
+                </span> 
+            </p>           
+        </div>
+    </div>
+    <div class="vl"></div>
+    <div class="sub-two">
+        
+        <h2 class="upl">Upload Plant Image</h2>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+
+
+        <div class="image-section" style="display:none;">
+            <img id="imagePreview"  class="img-responsive" src="#"/><br><br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
+            </div>
+        </div>
+
+        <div class="loader" style="display:none;"></div>
+
+        <h3 id="result">
+            <span> </span>
+        </h3>
+    </div>
+</div>
+
+</center>
+{% endblock %}

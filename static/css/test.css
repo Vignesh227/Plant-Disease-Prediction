@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+.loader {
+    margin-top: 20px;
+    margin-left: 37px;
+    border: 8px solid #f3f3f3 !important; /* Light grey */
+    border-top: 8px solid rgb(131, 199, 29) !important; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.foot
+{
+
+    background-color: #222222;
+    color:white;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left:0px;
+    text-align:center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+
+    bottom: 0;
+    width: 100%;
+}
+body{       
+    color:white;
+    background-color: rgb(37, 37, 37);
+    margin:0;
+}
+.navbar{
+    height: 4rem;
+    top:0;
+    background-color: rgb(131, 199, 29)!important;
+}
+.container{
+     /* padding: 12px 15px 10px; */
+    
+}
+.navbar-brand{
+    /*font-family: 'Inconsolata', monospace;*/
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color:black;
+}
+.sub{
+    margin:20px;
+    display: flex;
+}
+.sub-one{
+    display: flex;
+    width:50%;
+}
+.vl{
+    margin-top: 10px;
+    border-left: 1px solid white;
+    height: 65%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    
+}
+.sub-two{
+    width:50%;
+}
+.plant-img{
+    margin-top: 50px;
+    height: 20rem;
+}
+.image-section, .img-responsive{    
+    border-radius: 8px; 
+    margin-left:10px;
+    height: 170px !important;
+    width: 185px !important;
+}
+h2, .upl{
+    margin-top: 1.15rem;
+    padding-left: 30px;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+    color:rgb(131, 199, 29);   
+}
+footer{
+    height:5rem;
+    position: fixed;
+    width:100%;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.foot{
+    font-family: 'Inconsolata', monospace;
+    background-color: rgb(131, 199, 29)!important;
+    color: black;
+}
+.intro-content{
+    padding-top: 1.7rem;
+    padding-left: 1.2rem;
+    
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.dont-worry{
+    text-align: center;
+}
+.steps{
+    text-align: left !important;
+    margin-left: 0!important;
+}
+#imageUpload, .btn{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    border: none;
+    color:rgb(37, 37, 37);
+    background-color: rgb(131, 199, 29);
+}
+.btn{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.btn:hover{
+    color:rgb(37, 37, 37);
+    background-color: rgb(153, 235, 30);
+}
+.upl{
+    margin-top: 2.4rem;
+}
+#result{
+    margin-top:1.4rem;
+    color:white;
+    /*color:rgb(131, 199, 29);*/
+    font-family: 'Inconsolata', monospace;  
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.middle{
+    visibility: hidden;
+    /*display: none;*/
+}
+
+@media (max-width: 480px){
+    center{
+        margin-top: 4rem;
+    }
+    .navbar{
+        overflow: hidden;
+        width:437px;
+        position:fixed;
+    }
+    .sub{
+        margin-top: 3rem;
+        width:437px;
+        margin: 0px;
+        display: block;
+    }
+    h2{
+        padding-left: 0px;
+        margin-top: 2.5rem;
+    }
+    .sub-one{/*
+        width: 60%; */
+         width:90%; 
+    }
+    .middle{
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    .sub-one-one{
+        visibility: hidden;
+        width: 0%;
+    }
+    .intro-content{
+        margin: 0;
+        padding: 0;
+    }
+    .vl{
+        visibility: hidden;
+        width: 0%;
+    }
+    
+    .sub-two{
+        width: 100%;
+    }
+    .upl{
+        padding-left: 0px;
+        margin-top: 3.5rem;
+    }
+    .image-section, .img-responsive{ 
+        border-radius: 8px;   
+        margin-left:0px;
+        height: 160px !important;
+        width: 165px !important;
+    }
+    #imageUpload, .btn{
+        margin-left: 0rem;
+    }
+    .btn{
+        margin-top: 0;
+    }
+    body {
+      margin: 0;
+    }
+    .plant-img{
+        margin-top: 0px;
+        height: 20rem;
+    }
+    .loader{
+        margin-left: 0px;
+    }
+    #result{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    footer{
+        height:3.5rem;
+        margin-bottom: -1rem;
+    }
+    .foot{
+        padding-top: 8px;
+    }
+}
